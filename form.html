@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+	<title>Nativo ISR Request</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!-- Favicon will show once intSegrated with image folder of webpage  -->
+	<link rel="shortcut icon" type="image/x-icon" href="/static/img/favicon.ico">
+	<!-- Closest font to Swis 721 -->
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+  <div class="container">
+	<header>
+		<!-- Logo found on Google, used bitly to shorten url -->
+    <a href="https://www.nativo.net"><img src="http://bit.ly/1LjkbOO" alt="Nativo" width="203" height="32"></a>
+    <p>Internal Support Request</p>
+	</header>
+
+	<form id="zForm" method="post" action="ticket.php" name="zForm">
+    <p class="wrap input-js">
+      <label for="name">Your Name:</label>
+      <input type="text" name="z_name" id="name" minlength="2" placeholder="Name" required>
+    </p>
+
+		<p class="wrap input-js"><label for="email">Email Address:</label>
+      <input type="email" name="z_requester" id="email" placeholder="Email Address" required>
+    </p>
+        <!-- Replace items below with products -->
+    <p class="wrap select-js"><label for="subject">Ticket Subject:</label>
+      <select name="z_subject" id="subject" required>
+        <option value="">Select Product</option>
+        <option value="item1">Item 1</option>
+        <option value="item2">Item 2</option>
+        <option value="item3">Item 3</option>
+        <option value="item4">Item 4</option>
+        <option value="item5">Item 5</option>
+        <option value="item6">Other</option>
+      </select>
+    </p>
+
+    <p class="wrap message-js">
+      <label for="description">Description:</label>
+      <textarea name="z_description" cols="20" rows="6" id="description" placeholder="Description" required></textarea>
+    </p>
+
+		<p class="wrap">
+      <div class="submit">
+        <input type="submit" name="submit" value="Submit Ticket">
+      </div>
+    </p>
+	</form>
+</div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
