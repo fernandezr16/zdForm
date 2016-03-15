@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-	<title>Nativo ISR Request</title>
+	<title>Nativo Publication Issue</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<!-- Favicon will show once intSegrated with image folder of webpage  -->
 	<link rel="shortcut icon" type="image/x-icon" href="/static/img/favicon.ico">
@@ -14,7 +14,7 @@
 	<header>
     <!-- Logo found on Google, used bitly to shorten url -->
     <a href="https://www.nativo.net"><img src="http://bit.ly/1LjkbOO" alt="Nativo" width="203" height="32"></a>
-    <p>Internal Support Request</p>
+    <p>Publication Issue</p>
 	</header>
 
 	<form id="zForm" method="post" action="ticket.php" name="zForm">
@@ -26,22 +26,28 @@
     <p class="wrap input-js"><label for="email">Email Address:</label>
       <input type="email" name="z_requester" id="email" placeholder="Email Address" required>
     </p>
-    <!-- Replace items below with products -->
+        
+    <p class="wrap input-js"><label for="pub">Publication:</label>
+      <input type="text" name="z_pub" id="pub" placeholder="Publication" required>
+    </p>
+    
+        
+    <!-- Replace items below with Ad Type -->
     <p class="wrap select-js"><label for="subject">Ticket Subject:</label>
       <select name="z_subject" id="subject" required>
         <option value="">Select Product</option>
-        <option value="item1">Item 1</option>
-        <option value="item2">Item 2</option>
-        <option value="item3">Item 3</option>
-        <option value="item4">Item 4</option>
-        <option value="item5">Item 5</option>
-        <option value="item6">Other</option>
+        <option value="item1">Nativo Ad Unit</option>
+        <option value="item2">Content Landing Page</option>
+        <option value="item3">Feed Relay</option>
+        <option value="item4">DFP</option>
+        <option value="item5">Articles by Author</option>
+        <option value="item6">Admin/PA UI Error</option>
       </select>
     </p>
 
     <p class="wrap message-js">
-      <label for="description">Description:</label>
-      <textarea name="z_description" cols="20" rows="6" id="description" placeholder="Description" required></textarea>
+      <label for="description">Issue:</label>
+      <textarea name="z_description" cols="20" rows="6" id="description" placeholder="Description of Issue" required></textarea>
     </p>
 
     <p class="wrap">
