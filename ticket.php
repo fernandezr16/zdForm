@@ -32,17 +32,6 @@ foreach($_POST as $key => $value){
 	}
 }
 $create = json_encode(array('ticket' => array('subject' => $arr['z_subject'], 'product' => array('product' => $arr['z_product']), 'comment' => array('value' => $arr['z_description']), 'requester' => array('name' => $arr['z_name'], 'email' => $arr['z_requester']))));
-if(CUSTOM){
-	foreach($_POST as $key => $value){
-		if(preg_match('/^c_/i',$key)){
-			$id = str_replace('c_', '', strip_tags($key));
-			$value = strip_tags($value);
-			$cfield=array('id'=>$id, 'value'=>$value);
-			$ticket['ticket']['custom_fields'][]=$cfield;
-		}
-	}
-}
-$ticket = json_encode($ticket);
 $return = curlWrap("/tickets.json", $create);
 
 // Redirect to success page else 404 page.
