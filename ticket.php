@@ -31,8 +31,11 @@ foreach($_POST as $key => $value){
 		$arr[strip_tags($key)] = strip_tags($value);
 	}
 }
-$create = json_encode(array('ticket' => array('subject' => $arr['z_subject'], 'comment' => array('value' => $arr['z_description']), 'requester' => array('name' => $arr['z_name'], 'email' => $arr['z_requester'])))));
-$return = curlWrap("/tickets.json", $create);
+// $create = json_encode(array('ticket' => array('subject' => $arr['z_subject'], 'comment' => array('value' => $arr['z_description']), 'requester' => array('name' => $arr['z_name'], 'email' => $arr['z_requester'])))));
+// $return = curlWrap("/tickets.json", $create);
+
+$create = json_encode(
+    array('ticket' => array('subject' => $arr['z_subject'], 'comment' => array('value' => $arr['z_description']), 'requester' => array('name' => $arr['z_name'], 'email' => $arr['z_requester'], 'custom_fields' => $arr['z_31158988'])))));
 
 // Redirect to success page else 404 page.
 if ($create){
