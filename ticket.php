@@ -30,7 +30,20 @@ foreach($_POST as $key => $value){
 		$arr[strip_tags($key)] = strip_tags($value);
 	}
 }
-$create = json_encode(array('ticket' => array('subject' => $arr['z_subject'], 'comment' => array( "value"=> $arr['z_description']), 'requester' => array('name' => $arr['z_name'], 'email' => $arr['z_requester']))));
+// $create = json_encode(array('ticket' => array('subject' => $arr['z_subject'], 'comment' => array( "value"=> $arr['z_description']), 'requester' => array('name' => $arr['z_name'], 'email' => $arr['z_requester']))));
+$create = json_encode(array(
+  'ticket' => array(
+    'subject' => $arr['z_subject'],
+    'comment' => array('value' => $arr['z_description']),
+    'requester' => array('name' => $arr['z_name'], 'email' => $arr['z_requester']),
+    'custom_fields' => [
+      //replace 1234 with the value or variable for the custom field id
+      //replace 'somevalue' with the variable containing the field value collected from your form
+      array('id' 31204387 => , 'value' => 'native_ad_unit')
+    ]
+    )
+  )
+);
 $return = curlWrap("/tickets.json", $create);
 
 // Redirect to success page else 404 page.
