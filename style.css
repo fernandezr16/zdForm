@@ -99,10 +99,10 @@ input[type=submit]:hover {
 
 
 input:-webkit-autofill {
-    -webkit-box-shadow: 0 0 0px 1000px white inset;
+    -webkit-box-shadow: 0 0 0px 1000px #f0f0f0 inset;
 }
 
--webkit-text-fill-color: yellow !important;
+-webkit-text-fill-color: black !important;
 
 
 
