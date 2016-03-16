@@ -1,11 +1,11 @@
 
 <?php
 // ZDAPIKEY - Specify your API key. The key is listed in Zendesk on the Channels/API page (Admin > Channels > API)
-define("ZDAPIKEY", "Kt1qDQ4Y4cEexR8ji4LpN1bOKUdi0v4AVp694paS");
+define("ZDAPIKEY", "Yl48iZX9j0jS7AsY4kP3bU9IkwxwHmdnzLUdGjtm");
 // ZDUSER - Specify your email address registered with Zendesk
-define("ZDUSER", "tton@nativo.net");
+define("ZDUSER", "ymonkey714@gmail.com");
 // ZDURL - Replace "subdomain" in the URL with the subdomain of your Zendesk account.
-define("ZDURL", "https://ntvtest.zendesk.com/api/v2");
+define("ZDURL", "https://testacct.zendesk.com/api/v2");
 /* Note: do not put a trailing slash at the end of v2 */
 function curlWrap($url, $json, $action)
 {
