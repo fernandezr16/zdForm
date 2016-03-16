@@ -39,12 +39,11 @@ $create = json_encode(array(
     'custom_fields' => [
       //replace 1234 with the value or variable for the custom field id
       //replace 'somevalue' with the variable containing the field value collected from your form
-      array('id' 31204387 => , 'value' => 'native_ad_unit')
+      array('id' 31204387 => , 'value' => 'product')
     ]
     )
   )
 );
-print_r($create);
 $return = curlWrap("/tickets.json", $create);
 
 // Redirect to success page else 404 page.
