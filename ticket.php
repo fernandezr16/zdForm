@@ -19,7 +19,7 @@ function curlWrap($url, $json, $action)
 	curl_setopt($ch, CURLOPT_POSTFIELDS, $json);
 	curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 	curl_setopt($ch, CURLOPT_TIMEOUT, 10);
-  curl_setopt($curl_ch, CURLOPT_CAINFO, dirname(__FILE__)."cacert.pem");
+	curl_setopt($curl_ch, CURLOPT_CAINFO, dirname(__FILE__)."cacert.pem");
 	$output = curl_exec($ch);
 	curl_close($ch);
 	$decoded = json_decode($output);
