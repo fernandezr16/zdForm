@@ -44,6 +44,7 @@ $create = json_encode(array(
     )
   )
 );
+print_r($create);
 $return = curlWrap("/tickets.json", $create);
 
 // Redirect to success page else 404 page.
