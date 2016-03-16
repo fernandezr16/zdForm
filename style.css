@@ -96,21 +96,6 @@ input[type=submit]:hover {
   outline:1px solid #4ddbff;
 }
 
-/*Sprite icons for contact fields*/
-input#name, input#email, select#subject {
-  background-image: url('http://bit.ly/20qN02V');
-}
-
-input#name {
-  background-position: 0 153px;
-}
-input#email {
-  background-position: 0 353px;
-}
-select#subject {
-  background-position: 0 301px;
-}
-
 ::-webkit-input-placeholder {
     color:    #999;
 }
