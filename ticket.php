@@ -1,4 +1,3 @@
-
 <?php
 // ZDAPIKEY - Specify your API key. The key is listed in Zendesk on the Channels/API page (Admin > Channels > API)
 define("ZDAPIKEY", "Yl48iZX9j0jS7AsY4kP3bU9IkwxwHmdnzLUdGjtm");
@@ -31,7 +30,7 @@ foreach($_POST as $key => $value){
 		$arr[strip_tags($key)] = strip_tags($value);
 	}
 }
-$create = json_encode(array('ticket' => array('subject' => $arr['z_subject'], 'comment' => array( "value"=> $arr['z_description']), 'requester' => array('name' => $arr['z_name'], 'email' => $arr['z_requester']))));
+$create = json_encode(array('ticket' => array('subject' => $arr['z_subject'], 'custom_fields' => $arr['z_31204387'], 'comment' => array( "value"=> $arr['z_description']), 'requester' => array('name' => $arr['z_name'], 'email' => $arr['z_requester']))));
 $return = curlWrap("/tickets.json", $create);
 
 // Redirect to success page else 404 page.
