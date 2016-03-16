@@ -97,9 +97,9 @@ input[type=submit]:hover {
 }
 
 /*Sprite icons for contact fields*/
-/*input#name, input#email, select#subject {*/
-/*  background-image: url('http://bit.ly/20qN02V');*/
-/*}*/
+input#name, input#email, select#subject {
+  background-image: url('http://bit.ly/20qN02V');
+}
 
 input#name {
   background-position: 0 153px;
