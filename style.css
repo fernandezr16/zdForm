@@ -96,15 +96,9 @@ input[type=submit]:hover {
   outline:1px solid #4ddbff;
 }
 
-
-
 input:-webkit-autofill {
     -webkit-box-shadow: 0 0 0px 1000px #f0f0f0 inset;
 }
-
--webkit-text-fill-color: #000 !important;
-
-
 
 ::-webkit-input-placeholder {
     color:    #999;
