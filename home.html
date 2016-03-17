@@ -20,19 +20,19 @@
 	<form id="zForm" method="post" action="ticket.php" name="zForm">
     <p class="wrap input-js">
       <label for="name">Your Name:</label>
-      <input type="text" name="name" id="name" minlength="2" placeholder="Name" required>
+      <input type="text" name="z_name" id="name" minlength="2" placeholder="Name" required>
     </p>
 
     <p class="wrap input-js"><label for="email">Email Address:</label>
-      <input type="email" name="requester" id="email" placeholder="Email Address" required>
+      <input type="email" name="z_requester" id="email" placeholder="Email Address" required>
     </p>
         
     <p class="wrap input-js"><label for="subject">Publication:</label>
-      <input type="text" name="subject" id="subject" placeholder="Publication" required>
+      <input type="text" name="z_subject" id="subject" placeholder="Publication" required>
     </p>
     
     <p class="wrap select-js"><label for="product">Ticket Product:</label>
-      <select name="product" id="product" required>
+      <select name="z_product" id="product" required>
         <option value="">Select Product</option>
         <option value="native_ad_unit">Nativo Ad Unit</option>
         <option value="content_landing_page">Content Landing Page</option>
@@ -45,7 +45,7 @@
 
     <p class="wrap message-js">
       <label for="description">Issue:</label>
-      <textarea name="description" cols="20" rows="6" id="description" placeholder="Description of Issue" required></textarea>
+      <textarea name="z_description" cols="20" rows="6" id="description" placeholder="Description of Issue" required></textarea>
     </p>
 
     <p class="wrap">
