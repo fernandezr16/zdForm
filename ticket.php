@@ -2,7 +2,7 @@
 // ZDAPIKEY - Specify your API key. The key is listed in Zendesk on the Channels/API page (Admin > Channels > API)
 define("ZDAPIKEY", "Yl48iZX9j0jS7AsY4kP3bU9IkwxwHmdnzLUdGjtm");
 // ZDUSER - Specify your email address registered with Zendesk
-define("ZDUSER", "ymonkey714@gmail.com");
+define("ZDUSER", "email@gmail.com");
 // ZDURL - Replace "subdomain" in the URL with the subdomain of your Zendesk account.
 define("ZDURL", "https://testacct.zendesk.com/api/v2");
 /* Note: do not put a trailing slash at the end of v2 */
