@@ -7,6 +7,8 @@
 	<link rel="shortcut icon" type="image/x-icon" href="/static/img/favicon.ico">
 	<!-- Closest font to Swis 721 -->
 	<link href='https://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
+
+  <script src="js/main.js" type="text/javascript"></script>
 </head>
 
 <body>
@@ -14,7 +16,7 @@
 	<header>
     <!-- Logo found on Google, used bitly to shorten url -->
     <a href="https://www.nativo.net"><img src="http://bit.ly/1LjkbOO" alt="Nativo" width="203" height="32"></a>
-    <p>Publication Issue</p>
+    <p>PubOps Issue</p>
 	</header>
 
 	<form id="zForm" method="post" action="ticket.php" name="zForm">
@@ -27,8 +29,8 @@
       <input type="email" name="z_requester" id="email" placeholder="Email Address" required>
     </p>
         
-    <p class="wrap input-js"><label for="subject">Publication:</label>
-      <input type="text" name="z_subject" id="subject" placeholder="Publication" required>
+    <p class="wrap input-js"><label for="subject">Subject:</label>
+      <input type="text" name="z_subject" id="subject" placeholder="Subject/publication" required>
     </p>
     
     <p class="wrap select-js"><label for="product">Ticket Product:</label>
@@ -50,7 +52,7 @@
 
     <p class="wrap">
       <div class="submit">
-        <input type="submit" name="submit" value="Submit Ticket">
+        <input type="submit" name="submit" value="Submit Ticket" target="_blank">
       </div>
     </p>
 	</form>
