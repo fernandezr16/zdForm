@@ -1,9 +1,17 @@
 window.onload = function() {
+	dropdownInit();
     dropdownChange();
 }
 
-function dropdownChange() {
+var dropdownChange = function() {
     document.getElementById('product').addEventListener('change', function() {
-        this.value.length > 0 ? this.style.color = 'black' : this.style.color = '';
+        changeDropdownColor(this);
     });
+}
+var dropdownInit = function() {
+	changeDropdownColor(document.getElementById('product'));
+}
+
+var changeDropdownColor = function(element) {
+	element.value.length > 0 ? element.style.color = 'black' : element.style.color = '';
 }
